@@ -1,4 +1,12 @@
 :root {
+  --clr-primary-100: hsl(35, 77%, 62%);
+  --clr-primary-200: hsl(5, 85%, 63%);
+
+  --clr-neutral-100: hsl(36, 100%, 99%);
+  --clr-neutral-200: hsl(233, 8%, 79%);
+  --clr-neutral-300: hsl(236, 13%, 42%);
+  --clr-neutral-400: hsl(240, 100%, 5%);
+
   --fs-300: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
   --fs-400: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
   --fs-500: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -7,38 +15,16 @@
   --fs-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
   --fs-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
   --fs-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+
+  --ff-primary-100: "Inter", sans-serif;
+
+  --fw-extra-light: 300;
+  --fw-light: 400;
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
 }
-
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Soft orange: hsl(35, 77%, 62%)
-- Soft red: hsl(5, 85%, 63%)
-
-### Neutral
-
-Off-white: hsl(36, 100%, 99%)
-Grayish blue: hsl(233, 8%, 79%)
-Dark grayish blue: hsl(236, 13%, 42%)
-Very dark blue: hsl(240, 100%, 5%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 15px
-
-### Font
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 400, 700, 800
