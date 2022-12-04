@@ -26,10 +26,6 @@
   --fw-extra-bold: 800;
 }
 
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700, 800
-
-
 /* https://piccalil.li/blog/a-modern-css-reset */
 /* Box sizing rules */
 *,
@@ -95,4 +91,9 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+* {
+  font-size: inherit;
+  font-family: var(--ff-primary-100);
 }
