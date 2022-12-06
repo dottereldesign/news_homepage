@@ -97,3 +97,44 @@ select {
   font-size: inherit;
   font-family: var(--ff-primary-100);
 }
+
+body {
+  padding: 1em;
+}
+
+main {
+  width: min(1110px, 100%);
+  margin: 0 auto;
+}
+
+.hero img {
+  width: min(730px, 100%);
+}
+
+.hero h1 {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-extra-bold);
+  line-height: 1.1;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.hero_body {
+  font-size: var(--fs-500);
+  color: var(--clr-neutral-300);
+  padding-bottom: 1.25em;
+}
+
+.hero_cta {
+  display: flex;
+  background-color: var(--clr-primary-200);
+  color: var(--clr-neutral-100);
+  width: 185px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+}
