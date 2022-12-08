@@ -63,6 +63,7 @@ body {
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 /* Make images easier to work with */
@@ -86,7 +87,9 @@ select {
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -96,6 +99,10 @@ select {
 * {
   font-size: inherit;
   font-family: var(--ff-primary-100);
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -143,6 +150,10 @@ main {
   font-weight: var(--fw-semi-bold);
 }
 
+.hero_cta:hover {
+  background-color: var(--clr-neutral-400);
+}
+
 .new {
   background-color: var(--clr-neutral-400);
   padding: 1em;
@@ -159,6 +170,10 @@ main {
 
 .new_card h3 {
   color: var(--clr-neutral-100);
+}
+
+.new_card h3:hover {
+  color: var(--clr-primary-100);
 }
 
 .new_card p {
@@ -202,6 +217,10 @@ main {
   color: var(--clr-neutral-400);
   line-height: 1;
   padding: 0.75em 0 0.75em 0;
+}
+
+.trending_card h3:hover {
+  color: var(--clr-primary-200);
 }
 
 .trending_card p {
