@@ -109,8 +109,6 @@ body {
 }
 
 header {
-  width: min(1110px, 100%);
-  margin: 0 auto;
   height: 80px;
   padding: 1em 0 1em 0;
   display: flex;
@@ -121,11 +119,6 @@ header {
 header img {
   width: 45px;
   height: auto;
-}
-
-main {
-  width: min(1110px, 100%);
-  margin: 0 auto;
 }
 
 .hero {
@@ -139,7 +132,7 @@ main {
 }
 
 .hero_heading h1 {
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
   font-weight: var(--fw-extra-bold);
   line-height: 1.1;
   padding: 0.5em 0 0.5em 0;
@@ -179,7 +172,7 @@ main {
 }
 
 .new h2 {
-  font-size: var(--fs-800);
+  font-size: var(--fs-700);
   font-weight: var(--fw-extra-bold);
   line-height: 1.1;
   padding: 0.5em 0 0.5em 0;
@@ -188,7 +181,7 @@ main {
 
 .new_card h3 {
   color: var(--clr-neutral-100);
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
 }
 
 .new_card h3:hover {
@@ -201,7 +194,28 @@ main {
   font-size: var(--fs-500);
 }
 
-@media (min-width: 69.375rem) {
+@media (min-width: 49.625rem) {
+  header {
+    width: min(730px, 100%);
+    margin: 0 auto;
+  }
+
+  main {
+    width: min(730px, 100%);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 71.375rem) {
+  header {
+    width: min(1110px, 100%);
+    margin: 0 auto;
+  }
+  main {
+    width: min(1110px, 100%);
+    margin: 0 auto;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 350px 350px 350px;
@@ -217,7 +231,7 @@ main {
     grid-row-end: 1;
   }
 
-  .grid_col-1-1 {
+  .grid_col-1-2 {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -260,14 +274,14 @@ main {
 }
 
 .trending_card h2 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-600);
   font-weight: var(--fw-extra-bold);
   color: var(--clr-neutral-200);
   line-height: 1;
 }
 
 .trending_card h3 {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: var(--fw-extra-bold);
   color: var(--clr-neutral-400);
   line-height: 1;
@@ -282,4 +296,41 @@ main {
   font-size: var(--fs-400);
   color: var(--clr-neutral-400);
   line-height: 1.5;
+}
+
+@media (min-width: 71.375rem) {
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: auto auto;
+    gap: 30px;
+  }
+
+  .grid_col-1-2 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid_col-2-3 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid_col-3-4 {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .trending_card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+  }
+
+  .trending {
+    margin-top: 2em;
+  }
 }
