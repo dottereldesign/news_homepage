@@ -109,6 +109,9 @@ body {
 }
 
 header {
+  width: min(730px, 100%);
+  margin: 0 auto;
+
   height: 80px;
   padding: 1em 0 1em 0;
   display: flex;
@@ -116,9 +119,18 @@ header {
   justify-content: space-between;
 }
 
+main {
+  width: min(730px, 100%);
+  margin: 0 auto;
+}
+
 header img {
   width: 45px;
   height: auto;
+}
+
+header .nav_items {
+  display: none;
 }
 
 .hero {
@@ -200,6 +212,25 @@ header img {
     margin: 0 auto;
   }
 
+  header .nav_items {
+    display: flex;
+    list-style-type: none;
+  }
+
+  ul li {
+    padding-right: 2.5em;
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-400);
+  }
+
+  .nav_items-last {
+    padding-right: 0;
+  }
+
+  header .nav_menu {
+    display: none;
+  }
+
   main {
     width: min(730px, 100%);
     margin: 0 auto;
@@ -214,6 +245,14 @@ header img {
   main {
     width: min(1110px, 100%);
     margin: 0 auto;
+  }
+
+  .hero_heading h1 {
+    padding: 0;
+  }
+
+  .hero_cta {
+    margin-bottom: 0em;
   }
 
   .grid {
